@@ -25,7 +25,7 @@ function createMenu($httpMethod)
     $harga_beli = htmlspecialchars($httpMethod["harga_beli"]);
     $stok = htmlspecialchars($httpMethod["stok"]);
     // create
-    $query = "INSERT INTO produk(nama, deskripsi, harga, stok) VALUES ('$nama', '$deskripsi', '$harga_jual', '$harga_beli', '$stok')";
+    $query = "INSERT INTO produk(nama, deskripsi, harga_jual, harga_beli, stok) VALUES ('$nama', '$deskripsi', '$harga_jual', '$harga_beli', '$stok')";
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }

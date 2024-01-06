@@ -7,3 +7,4 @@ else {
     $conn = mysqli_connect("localhost", "root", "", "e-kasir") or die(mysqli_error($conn));
 }
 ?>
+
