@@ -8,6 +8,3 @@ if ($conn->multi_query($sql)) {
 } else {
     echo "Error executing SQL file: " . $conn->error;
 }
-
-// Close connection
-$conn->close();
