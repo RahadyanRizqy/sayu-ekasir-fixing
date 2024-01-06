@@ -120,6 +120,9 @@ $transaksi = getTransaksiById($_GET["id"]);
         <div class="col-lg-12 col-xl-7">
             <div class="card">
                 <div class="card-body p-5">
+                    <div class="text-muted">
+                        <h1 class="text-center">SAYU JUS</h1>
+                    </div>
                     <div class="border-top border-gray-200 pt-4 mt-4">
                         <div class="row">
                             <div class="col-md-6">
