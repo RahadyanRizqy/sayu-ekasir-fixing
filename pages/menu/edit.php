@@ -34,12 +34,12 @@ if(isset($_GET["id"])) {
                 <textarea class="form-control" id="deskripsi" name="deskripsi" required><?= $menu["deskripsi"] ?></textarea>
             </div>
             <div class="mb-3">
-                <label for="harga" class="form-label">Harga Jual</label>
-                <input type="number" class="form-control" min="0" id="harga" name="harga" value="<?= $menu["harga_jual"] ?>" required>
+                <label for="harga_jual" class="form-label">Harga Jual</label>
+                <input type="number" class="form-control" min="0" id="harga_jual" name="harga_jual" value="<?= $menu["harga_jual"] ?>" required>
             </div>
             <div class="mb-3">
-                <label for="harga" class="form-label">Harga Beli</label>
-                <input type="number" class="form-control" min="0" id="harga" name="harga" value="<?= $menu["harga_beli"] ?>" required>
+                <label for="harga_beli" class="form-label">Harga Beli</label>
+                <input type="number" class="form-control" min="0" id="harga_beli" name="harga_beli" value="<?= $menu["harga_beli"] ?>" required>
             </div>
             <div class="mb-3">
                 <label for="stok" class="form-label">Stok</label>

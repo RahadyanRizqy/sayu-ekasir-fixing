@@ -21,10 +21,11 @@ function createMenu($httpMethod)
     global $conn;
     $nama = htmlspecialchars($httpMethod["nama"]);
     $deskripsi = htmlspecialchars($httpMethod["deskripsi"]);
-    $harga = htmlspecialchars($httpMethod["harga"]);
+    $harga_jual = htmlspecialchars($httpMethod["harga_jual"]);
+    $harga_beli = htmlspecialchars($httpMethod["harga_beli"]);
     $stok = htmlspecialchars($httpMethod["stok"]);
     // create
-    $query = "INSERT INTO produk(nama, deskripsi, harga, stok) VALUES ('$nama', '$deskripsi', '$harga', '$stok')";
+    $query = "INSERT INTO produk(nama, deskripsi, harga, stok) VALUES ('$nama', '$deskripsi', '$harga_jual', '$harga_beli', '$stok')";
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }
@@ -44,10 +45,11 @@ function updateMenu($httpMethod)
     $id = $_GET["id"];
     $nama = htmlspecialchars($httpMethod["nama"]);
     $deskripsi = htmlspecialchars($httpMethod["deskripsi"]);
-    $harga = htmlspecialchars($httpMethod["harga"]);
+    $harga_jual = htmlspecialchars($httpMethod["harga_jual"]);
+    $harga_beli = htmlspecialchars($httpMethod["harga_beli"]);
     $stok = htmlspecialchars($httpMethod["stok"]);
     // update
-    $query = "UPDATE produk SET nama = '$nama', deskripsi = '$deskripsi', harga = '$harga', stok = '$stok' WHERE id = $id";
+    $query = "UPDATE produk SET nama = '$nama', deskripsi = '$deskripsi', harga_jual = '$harga_jual', harga_beli = '$harga_beli', stok = '$stok' WHERE id = $id";
     mysqli_query($conn, $query);
     return mysqli_affected_rows($conn);
 }

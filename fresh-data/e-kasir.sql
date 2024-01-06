@@ -27,6 +27,11 @@ SET time_zone = "+00:00";
 -- Table structure for table `admin`
 --
 
+DROP TABLE IF EXISTS transaksi_detail;
+DROP TABLE IF EXISTS transaksi;
+DROP TABLE IF EXISTS produk;
+DROP TABLE IF EXISTS admin;
+
 CREATE TABLE `admin` (
   `id` int NOT NULL,
   `nama` varchar(255) NOT NULL,

@@ -149,10 +149,10 @@ $transaksi = getTransaksiById($_GET["id"]);
                         <tr>
                             <td class="px-0"><?= $item["nama"] ?></td>
                             <td class="px-0"><?= $item["qty"] ?></td>
-                            <td class="text-end px-0">Rp<?= $item["qty"] * $item["harga"] ?></td>
+                            <td class="text-end px-0">Rp<?= $item["qty"] * $item["harga_jual"] ?></td>
                         </tr>
                         <?php
-                            $total += $item["qty"] * $item["harga"];
+                            $total += $item["qty"] * $item["harga_jual"];
                             endforeach;
                         ?>
                     </tbody>
