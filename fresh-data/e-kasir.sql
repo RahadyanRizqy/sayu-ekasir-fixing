@@ -43,7 +43,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `nama`, `password`) VALUES
-(1, 'admin@gmail.com', '$2y$10$SMeyiFYqcioCRkK3Bhwuh.euWM07P7PoU5qJu9n8eNGMcH7M5VejS');
+(1, 'admin@gmail.com', '$2a$12$dyd3H0I/cBgXBVm0iroi6eHqj/QxdKa4HN.BRnj2/THmJpu1zqdYC');
 
 -- --------------------------------------------------------
 

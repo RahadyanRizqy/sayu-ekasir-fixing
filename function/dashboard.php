@@ -37,7 +37,7 @@ function getTransaksiJumlah()
 function getBarangPie()
 {
     global $conn;
-    $query = mysqli_query($conn, "SELECT * FROM produk");
+    $query = mysqli_query($conn, "SELECT * FROM produk WHERE deleted_at IS NULL");
     $rows = [];
     while ($row = mysqli_fetch_assoc($query)) {
         $rows[] = $row;
