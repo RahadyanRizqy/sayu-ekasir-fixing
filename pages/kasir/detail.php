@@ -121,7 +121,7 @@ $transaksi = getTransaksiById($_GET["id"]);
             <div class="card">
                 <div class="card-body p-5">
                     <div class="text-muted">
-                        <h1 class="text-center">SAYU JUS</h1>
+                        <h1 class="text-center">DV JUICE AND SALAD</h1>
                     </div>
                     <div class="border-top border-gray-200 pt-4 mt-4">
                         <div class="row">
