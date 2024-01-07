@@ -120,9 +120,12 @@ $transaksi = getTransaksiById($_GET["id"]);
         <div class="col-lg-12 col-xl-7">
             <div class="card">
                 <div class="card-body p-5">
-                    <div class="text-muted">
-                        <h1 class="text-center">DV JUICE AND SALAD</h1>
-                    </div>
+                <div class="text-muted text-center">
+                    <div>DV JUICE AND SALAD</div>
+                    <div>---------------------------</div>
+                    <div>Kab. Banyuwangi, Jawa Timur</div>
+                    <div>085258506778</div>
+                </div>
                     <div class="border-top border-gray-200 pt-4 mt-4">
                         <div class="row">
                             <div class="col-md-6">
