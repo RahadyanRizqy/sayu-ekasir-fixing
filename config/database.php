@@ -1,5 +1,5 @@
 <?php
-$remote = true;
+$remote = false;
 if ($remote) {
     $conn = mysqli_connect("pk.rdnet.id:22987", "e-kasir", "e-kasir", "e-kasir") or die(mysqli_error($conn));
 }

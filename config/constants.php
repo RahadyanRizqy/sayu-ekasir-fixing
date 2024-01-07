@@ -1,3 +1,3 @@
 <?php 
-define("BASE_URL", "http://localhost/ekasir/pages");
+define("BASE_URL", "http://sayu-ekasir.rdnet.id/ekasir/pages");
 ?>
