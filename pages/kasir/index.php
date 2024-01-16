@@ -121,7 +121,7 @@ $transactions = getTransaksi();
             items.style.marginTop = "-10px";
             items.innerHTML = `
                 <input type="hidden" value="${menuId}" name="product_id[]">
-                <input class="nama-barang form-control" value="${menuName}" readonly>
+                <input class="nama-barang form-control" value=${menuName} readonly>
                 <div class="action d-flex gap-2">
                     <input type="number" min="1" max="${menuStock}" class="harga-${menuId} form-control" style="width: 100px;" value="1" onchange="tambahTotal(${menuId}, ${menuPrice})" name="qty[]">
                     <button class="hapus-${menuId} btn btn-danger" onclick="removeCart(${menuId}, ${menuPrice})">X</button>
