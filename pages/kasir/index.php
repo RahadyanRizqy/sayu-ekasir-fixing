@@ -8,9 +8,10 @@ if(isset($_POST["submit"])) {
     if(createTransaksi() > 0) {
         $transactionId = getLatestTransaksi();
         $uangBayar = $_POST["uang_bayar"];
+        $pembayaran = $_POST["pembayaran"];
         echo "<script>
             alert('Data berhasil ditambahkan');
-            document.location.href = '" . BASE_URL . "/kasir/cetak.php?id=$transactionId&uang_bayar=$uangBayar';
+            document.location.href = '" . BASE_URL . "/kasir/cetak.php?id=$transactionId&uang_bayar=$uangBayar&pembayaran=$pembayaran';
         </script>";
     }else {
         echo "<script>
@@ -73,8 +74,8 @@ $transactions = getTransaksi();
                         <div class="card-body">
                             <form action="" method="POST">
                                 <p>Item :</p>
-                                <div class="nota " style="margin-top: -10px;">
-                                    
+                                <div class="nota" style="margin-top: -10px;">
+        
                                 </div>
                                 <div class="mt-2">
                                     <div class="total d-flex gap-2 justify-content-between">
@@ -84,6 +85,10 @@ $transactions = getTransaksi();
                                     <div class="bayar d-flex gap-2 justify-content-between mt-2">
                                         <p>Harga Bayar:</p>
                                         <input type="number" class="form-control" style="width: 150px;" onkeyup="bayar()" name="uang_bayar">
+                                    </div>
+                                    <div class="pembayaran d-flex gap-2 justify-content-between">
+                                        <p>Pembayaran:</p>
+                                        <input type="text" class="form-control" style="width: 150px;" value="" name="pembayaran">
                                     </div>
                                     <div class="kembalian d-flex gap-2 justify-content-between mt-2">
                                         <p>Harga Kembalian:</p>

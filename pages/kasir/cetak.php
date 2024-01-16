@@ -8,6 +8,7 @@ if (!isset($_SESSION["login"])) {
 <?php 
 require "./../../function/kasir.php";
 $transaksi = getTransaksiById($_GET["id"]);
+$pembayaran = $_GET["pembayaran"];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -135,6 +136,8 @@ $transaksi = getTransaksiById($_GET["id"]);
                             <div class="col-md-6 text-md-end">
                             <div class="text-muted mb-2">Tanggal Transaksi</div>
                             <strong><?= $transaksi[0]["tanggal"] ?></strong>
+                            <div class="text-muted mb-2">Pembayaran</div>
+                            <strong><?= $pembayaran ?></strong>
                             </div>
                         </div>
                     </div>
@@ -142,9 +145,9 @@ $transaksi = getTransaksiById($_GET["id"]);
                     <table class="table border-bottom border-gray-200 mt-3">
                     <thead>
                         <tr>
-                        <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm px-0">Deskripsi</th>
-                        <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm px-0">Jumlah</th>
-                        <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm text-end px-0">Harga</th>
+                            <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm px-0">Deskripsi</th>
+                            <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm px-0">Jumlah</th>
+                            <th scope="col" class="fs-sm text-dark text-uppercase-bold-sm text-end px-0">Harga</th>
                         </tr>
                     </thead>
                     <tbody>
